@@ -3,7 +3,7 @@
 namespace Insane\Remotr;
 
 use Illuminate\Support\ServiceProvider;
-use Insane\Remotr\Console\GitSetupCommand;
+use Insane\Remotr\Console\SetupCommand;
 
 class RemotrServiceProvider extends ServiceProvider
 {
@@ -17,7 +17,7 @@ class RemotrServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->commands([
-                GitSetupCommand::class,
+                SetupCommand::class,
             ]);
         }
     }

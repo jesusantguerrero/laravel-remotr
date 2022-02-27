@@ -6,7 +6,7 @@ use Illuminate\Console\Command;
 use Illuminate\Support\Str;
 use Symfony\Component\Process\Process;
 
-class GitSetupCommand extends Command
+class SetupCommand extends Command
 {
     /**
      * The name and signature of the console command.
